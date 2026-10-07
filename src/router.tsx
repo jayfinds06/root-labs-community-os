@@ -2,7 +2,8 @@ import {
   Outlet,
   createRootRoute,
   createRoute,
-  createRouter,
+createRouter,
+createHashHistory,
 } from "@tanstack/react-router";
 import {
   normalizeDashboardSearch,
@@ -55,8 +56,8 @@ const routeTree = rootRoute.addChildren([
 
 export const router = createRouter({
   routeTree,
- basepath: "/root-labs-community-os",
- defaultPreload: "intent",
+  history: createHashHistory(),
+  defaultPreload: "intent",
 });
 
 declare module "@tanstack/react-router" {
