@@ -1,0 +1,153 @@
+/* Header */
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header-badge {
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  border-radius: 9999px;
+  border: 1px solid #93c5fd;
+  background-color: #eff6ff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #1d4ed8;
+}
+
+.header-title {
+  margin-bottom: 0.75rem;
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  color: #020617;
+}
+
+@media (min-width: 640px) {
+  .header-title {
+    font-size: 3rem;
+  }
+}
+
+.header-description {
+  max-width: 42rem;
+  font-size: 1rem;
+  color: #334155;
+}
+
+@media (min-width: 640px) {
+  .header-description {
+    font-size: 1.125rem;
+  }
+}
+
+/* UserList / Visit List */
+.user-list-card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.user-list-actions {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-primary {
+  border-radius: 0.5rem;
+  background-color: #0f172a;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: all 150ms ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #334155;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  border-color: #64748b;
+  transform: translateY(-2px);
+}
+
+.visit-count {
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.visit-count-value {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.error-message {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fda4af;
+  background-color: #fff1f2;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: #be123c;
+}
+
+.loading-text,
+.empty-text {
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.visit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.visit-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.visit-path {
+  font-family: monospace;
+  color: #334155;
+}
+
+.visit-date {
+  color: #64748b;
+}

@@ -1,0 +1,107 @@
+.ops-home {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.ops-hero,
+.ops-card {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(4, 12, 8, 0.96), rgba(4, 11, 8, 0.82));
+}
+
+.ops-hero {
+  display: grid;
+  gap: 1.5rem;
+  padding: clamp(1.6rem, 4vw, 3rem);
+  margin-bottom: 1.4rem;
+}
+
+.ops-eyebrow {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.ops-title {
+  max-width: 12ch;
+  margin-top: 0.5rem;
+  font-family: var(--display);
+  font-size: clamp(2.2rem, 5.5vw, 4.4rem);
+  line-height: 0.96;
+}
+
+.ops-lead {
+  max-width: 56rem;
+  margin-top: 0.9rem;
+  color: var(--text-soft);
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+}
+
+.ops-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.ops-section {
+  margin-top: 1.4rem;
+}
+
+.ops-section-head {
+  margin-bottom: 0.9rem;
+}
+
+.ops-section-title {
+  margin-top: 0.25rem;
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+}
+
+.ops-card-grid,
+.ops-section-split {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.ops-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ops-section-split {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ops-card {
+  padding: 1.2rem;
+}
+
+.ops-card h3 {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  margin-bottom: 0.55rem;
+}
+
+.ops-card p,
+.ops-card li {
+  color: var(--text-soft);
+}
+
+.ops-card-list ol,
+.ops-card-list ul {
+  margin-top: 0.8rem;
+  padding-left: 1.2rem;
+}
+
+.ops-card-list li + li {
+  margin-top: 0.55rem;
+}
+
+@media (max-width: 900px) {
+  .ops-card-grid,
+  .ops-section-split {
+    grid-template-columns: 1fr;
+  }
+}
