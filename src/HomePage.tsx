@@ -12,7 +12,7 @@ const HomePage = () => {
         <header className="flex items-center justify-between rounded-full border border-white/8 bg-white/[0.02] px-4 py-3 backdrop-blur-xl sm:px-5">
           <img src={logoSrc} alt="Root Labs" className="h-8 w-auto" />
           <a
-            href="href="/root-labs-community-os/dashboard"
+            href="#/dashboard"
             className="text-sm font-medium uppercase tracking-[0.14em] text-white/58 transition-colors hover:text-white"
           >
             Ops
