@@ -55,7 +55,8 @@ const routeTree = rootRoute.addChildren([
 
 export const router = createRouter({
   routeTree,
-  defaultPreload: "intent",
+ basepath: "/root-labs-community-os",
+ defaultPreload: "intent",
 });
 
 declare module "@tanstack/react-router" {
