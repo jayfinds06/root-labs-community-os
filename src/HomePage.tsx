@@ -41,7 +41,7 @@ const HomePage = () => {
                 size="lg"
                 className="min-w-44 rounded-full border border-white/10 bg-white text-black shadow-[0_18px_44px_rgba(255,255,255,0.08)] hover:bg-white/92"
               >
-                <a href="/root-labs-community-os/dashboard"">
+                <a href="#/dashboard">
                   Open Dashboard
                   <ArrowUpRight className="size-4" />
                 </a>
